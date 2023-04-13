@@ -91,7 +91,7 @@ with col1:
  
 with col2:
     total_orders = daily_df.order_count.sum()
-    st.metric("Total Rent Hours", value=total_revenue)
+    st.metric("Total Rent Hours", value=total_orders)
  
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.plot(
