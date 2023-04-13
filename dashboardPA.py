@@ -90,7 +90,7 @@ with col1:
     st.metric("Total Rent Hours", value=total_orders)
  
 with col2:
-    total_revenue = format_currency(daily_df.revenue.sum(), "TOTAL", locale='es_CO') 
+    total_orders = daily_df(daily_df.revenue.sum(), "TOTAL", locale='es_CO') 
     st.metric("Total Rent", value=total_revenue)
  
 fig, ax = plt.subplots(figsize=(16, 8))
